@@ -48,8 +48,16 @@ for( let i=0; i<supplyChanges.length; i++){
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
 console.log('7. Showing supplyChanges with "for of" loop');
-for(items of supplyChanges){
-  console.log(items);
+for(index of supplyChanges){
+  if(index > 0){
+    console.log('Added', index, 'parts.');
+  }
+  else if(index < 0){
+    console.log('Part count', index);
+  }
+  else if(index = 0){
+    
+  }
 }
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
